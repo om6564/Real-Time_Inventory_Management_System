@@ -1,0 +1,91 @@
+{
+  "inventory": {
+    "products": {
+      "SKU001": {
+        "name": "Product A",
+        "quantity": 150,
+        "reorderPoint": 50,
+        "leadTimeDays": 7,
+        "location": "Zone-A",
+        "safetyStock": 30
+      },
+      "SKU002": {
+        "name": "Product B",
+        "quantity": 25,
+        "reorderPoint": 40,
+        "leadTimeDays": 5,
+        "location": "Zone-B",
+        "safetyStock": 20
+      },
+      "SKU003": {
+        "name": "Product C",
+        "quantity": 200,
+        "reorderPoint": 100,
+        "leadTimeDays": 10,
+        "location": "Zone-C",
+        "safetyStock": 50
+      },
+      "SKU004": {
+        "name": "Product D",
+        "quantity": 8,
+        "reorderPoint": 25,
+        "leadTimeDays": 3,
+        "location": "Zone-A",
+        "safetyStock": 15
+      },
+      "SKU005": {
+        "name": "Product E",
+        "quantity": 75,
+        "reorderPoint": 60,
+        "leadTimeDays": 14,
+        "location": "Zone-B",
+        "safetyStock": 30
+      }
+    }
+  },
+  "transactions": [
+    {
+      "type": "SALE",
+      "productId": "SKU001",
+      "quantity": 10,
+      "timestamp": "2024-11-01T10:30:00Z"
+    },
+    {
+      "type": "PURCHASE",
+      "productId": "SKU001",
+      "quantity": 100,
+      "timestamp": "2024-11-01T14:00:00Z"
+    },
+    {
+      "type": "SALE",
+      "productId": "SKU002",
+      "quantity": 15,
+      "timestamp": "2024-11-01T11:15:00Z"
+    },
+    {
+      "type": "RETURN",
+      "productId": "SKU002",
+      "quantity": 5,
+      "timestamp": "2024-11-01T12:00:00Z"
+    },
+    {
+      "type": "SALE",
+      "productId": "SKU003",
+      "quantity": 50,
+      "timestamp": "2024-11-01T09:00:00Z"
+    },
+    {
+      "type": "SALE",
+      "productId": "SKU004",
+      "quantity": 12,
+      "timestamp": "2024-11-01T13:30:00Z"
+    },
+    {
+      "type": "PURCHASE",
+      "productId": "SKU005",
+      "quantity": 200,
+      "timestamp": "2024-11-01T15:00:00Z"
+    }
+  ]
+}
+
